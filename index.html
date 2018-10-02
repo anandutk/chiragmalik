@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/uikit.css" />
     <link rel="stylesheet" type="text/css" href="examples.css" />
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link href="css/Potra.ttf" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -35,12 +36,15 @@
                     <div class="uk-navbar-left">      
                           <a class="uk-navbar-item uk-logo" style="font-family:potra" href="#">C.M.</a>
                     </div>
-                    <div class="uk-navbar-right">
+                    </nav>
+                    </div>
+                    </div>
+                    <!-- <div class="uk-navbar-right">
             
                         <ul class="uk-navbar-nav">
                             <li >
 
-                                    <a  uk-toggle="target: #offcanvas-flip"><span uk-icon="icon:more; ratio: 2
+                                    <a  uk-toggle="target: #offcanvas-flip"><span uk-icon="icon:more; ratio: 2 
                                       "></span>
                                     </a>
                                 
@@ -58,11 +62,18 @@
                     
                                 <h3>Title</h3>
                     
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
+                                <ul id="main" class="uk-nav uk-nav-default">
+                                        <li data-menuanchor="firstPage" class="uk-active"><a href="#firstPage">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
                             </div>
                         </div>
-          </div>
+          </div> -->
          
         <div id="fullpage" >
                 <div   class="section active " id="section0 "  id="slide2" uk-parallax="bgy: 600">
@@ -80,7 +91,7 @@
                 </div> 
                 <div uk-slideshow="autoplay: true;  class="uk-position-relative uk-visible-toggle uk-light " uk-slideshow>
 
-                  <ul class="uk-slideshow-items    uk-margin-xlarge-left uk-margin-xlarge-right " >
+                  <ul  class="uk-slideshow-items    uk-margin-xlarge-left uk-margin-xlarge-right " >
                       <li > <div class="uk-position-center uk-text-center uk-light">
                         <h1 class="uk-heading-primary"  data-tilt data-tilt-axis="x">Infistats</h1>
                                   <p data-tilt data-tilt-axis="y" class="uk-text-large">
@@ -111,9 +122,9 @@
                      
             
                 </div>
-                <div class="intro section" id="section2" data-tilt data-tilt-reverse="true" style="background-image:url('3-1.png'); ">
+                <div class="intro section" id="section2" data-tilt data-tilt-reverse="true" ">
                         <div class="uk-position-top-center uk-overlay uk-overlay-primary">
-                            
+                            <h2> Things I know</h2>
                         </div> 
                         <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center" uk-grid style="color:#fff">
     <div>
@@ -133,7 +144,7 @@
 </div>
 
                 </div>
-                <div class="intro section" id="section3" data-tilt data-tilt-reverse="true" style="background-image:url('3-1.png'); ">
+                <div class="intro section" id="section3" data-tilt data-tilt-reverse="true">
                         <div class="uk-position-top-center uk-overlay uk-overlay-primary">
                             <h2>Contact Me</h2>
                         </div> 
@@ -213,7 +224,16 @@
     
 <script type="text/javascript" src="fullpage.js"></script>
 <script type="text/javascript" src="examples.js"></script>
-<script type="text/javascript">
+
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="js/particle.js"></script>
+ <script src="jquery-2.1.4.js"></script>
+ <script src="main.js"></script> <!-- Resource jQuery -->
+ <script src="vanilla-tilt.js"></script>
+ <script src="js/uikit.js"></script>
+ <script src="js/uikit-icons.js"></script>
+ <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
@@ -223,14 +243,6 @@
 
     });
 </script>
-  
-  <script src="particle-min.js"></script> 
-<script src="js/particle.js"></script>
- <script src="jquery-2.1.4.js"></script>
- <script src="main.js"></script> <!-- Resource jQuery -->
- <script src="vanilla-tilt.js"></script>
- <script src="js/uikit.js"></script>
- <script src="js/uikit-icons.js"></script>
 </body>
 
 </html>
