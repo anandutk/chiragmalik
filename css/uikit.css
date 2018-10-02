@@ -7855,8 +7855,8 @@ iframe.uk-cover {
  * 1. Required for `a`
  */
 .uk-logo {
-  font-size: 2rem;
   
+  font-family:potra;
   color: #fff;
   /* 1 */
   text-decoration: none;
